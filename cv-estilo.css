@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #718971;
+    height: 100vh;
+    margin: 0%;
+  }
+
+  .encabezado {
+    background-color: #395939;    
+    padding: 10px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%;
+   }
+
+  .encabezado h1 {
+    margin: 10px;
+    display: inline-block;
+    color: #e5e5e5;
+  }
+
+  .foto{	
+	background-color:#718971;
+	padding: 8px;
+  margin: 7px;
+  width: 15%;
+  border-radius: 10em;
+  display: inline-block;
+  vertical-align: middle;
+  }
+
+  .menu_izq, .derecha, .principal {
+    display: block;
+    overflow: auto;
+    float: left;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 350;
+    height: 80vh;
+  }
+
+  .menu_izq, .principal {
+    padding-inline-start: 0px;
+  }
+
+  .menu_izq, .derecha {
+    background-color: #718971;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .menu_izq {
+    width: 20%;
+  }
+
+  .principal {
+    background-color: #aab8aa;
+    width: 55%;
+    padding: 0 20px;
+    text-align: left;
+    color: #e5e5e5;
+  }
+
+  .derecha {
+    padding-inline-start: 5px;
+    width: 25%;
+  }
+
+  .lista_experiencia li, .lista_formacion li {
+    margin-left: 20px;
+  }
+
+  .lista_experiencia p {
+    margin-left: 30px;
+  }
+
+  button {
+    margin-left: 10px;
+    border-radius:10em;
+    background-color: #395939;
+    border: 1px solid #395939;
+    display: inline-block;
+  }
+
+  .pie_pagina {
+    background-color: #395939;
+    font-family: 'Prompt', sans-serif;
+    font-size: small;
+    width: 100%;
+    text-align: center;
+    color: #e5e5e5;
+    display: none;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: initial;
+  }
+
+  ol {
+    list-style: none;
+  }
+
+  i {
+    font-size: 25px;
+    color: #ffffff;
+  }
+
+  h2 {
+    display: inline-block;
+  }
+
+  @media only screen and (max-width: 620px) { /* Responsive: */
+    .encabezado, .menu_izq, .principal, .derecha, .pie_pagina, .navegador {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    .pie_pagina { 
+      display: block;
+    }
+
+    .lista_experiencia li, .lista_experiencia p, .lista_formacion li {
+      margin: 10px;
+    }  
+    .navegador {
+      display: inline-block;
+      text-align: center;
+      font-family: 'Prompt', sans-serif;
+    }
+    a {
+      color: #E6B0AA;
+    }
+
+    .foto {
+      width: 60%;
+      height: auto;
+    }
+    .encabezado h1 {
+      margin-left: 0%;
+    }    
+    #demo, #demo2, #demo3, #demo4, #demo5 {
+      display: none;
+    }
+
+    h2 {
+      display: block;
+    }
+  }
